@@ -1,12 +1,10 @@
-package lesson11.test.newproject.service;
+package module3.projectgame.service;
 
-import lesson11.test.newproject.entity.User;
-import lesson11.test.newproject.repository.Repository;
-import lesson11.test.newproject.repository.UserRepository;
+import module3.projectgame.entity.User;
+import module3.projectgame.repository.Repository;
+import module3.projectgame.repository.UserRepository;
 
-import java.nio.file.Path;
 import java.util.Collection;
-import java.util.Objects;
 import java.util.Optional;
 
 public enum UserService {
@@ -22,9 +20,7 @@ public enum UserService {
     public void update (User user) {
         userRepository.update(user);
     }
-    public void delete (User user) {
-        userRepository.delete(user);
-    }
+
     public Collection<User> getAll() {
         return userRepository.getAll();
     }

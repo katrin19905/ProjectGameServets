@@ -1,4 +1,4 @@
-package lesson11.test.newproject.utils;
+package module3.projectgame.utils;
 
 import lombok.experimental.UtilityClass;
 

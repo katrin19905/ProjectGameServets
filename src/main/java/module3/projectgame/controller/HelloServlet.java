@@ -1,4 +1,4 @@
-package module3.projectgame;
+package module3.projectgame.controller;
 
 import java.io.*;
 import javax.servlet.http.*;
@@ -15,14 +15,7 @@ public class HelloServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.setContentType("text/html");
 
-        HttpSession session = request.getSession();
-        Integer counter = (Integer) session.getAttribute("counter");
-        if (counter == null) {
-            session.setAttribute("counter", 1);
-            counter = 1;
-        } else {
-            session.setAttribute("counter", counter + 1);
-        }
+
 
 
         // Hello
